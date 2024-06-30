@@ -36,14 +36,14 @@ func NewAvsManagersBindings(registryCoordinatorAddr, operatorStateRetrieverAddr 
 		return nil, err
 	}
 
-	taskManagerAddr, err := contractServiceManager.IncredibleSquaringTaskManager(&bind.CallOpts{})
+	taskManagerAddr, err := contractServiceManager.CrossMessagingTaskManager(&bind.CallOpts{})
 	if err != nil {
 		logger.Error("Failed to fetch TaskManager address", "err", err)
 		return nil, err
 	}
 	contractTaskManager, err := cstaskmanager.NewContractIncredibleSquaringTaskManager(taskManagerAddr, ethclient)
 	if err != nil {
-		logger.Error("Failed to fetch IIncredibleSquaringTaskManager contract", "err", err)
+		logger.Error("Failed to fetch ICrossMessagingTaskManager contract", "err", err)
 		return nil, err
 	}
 

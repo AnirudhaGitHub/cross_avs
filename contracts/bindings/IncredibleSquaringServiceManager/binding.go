@@ -317,10 +317,10 @@ func (_ContractIncredibleSquaringServiceManager *ContractIncredibleSquaringServi
 	return _ContractIncredibleSquaringServiceManager.Contract.GetRestakeableStrategies(&_ContractIncredibleSquaringServiceManager.CallOpts)
 }
 
-// IncredibleSquaringTaskManager is a free data retrieval call binding the contract method 0x77ef731d.
+// CrossMessagingTaskManager is a free data retrieval call binding the contract method 0x77ef731d.
 //
 // Solidity: function incredibleSquaringTaskManager() view returns(address)
-func (_ContractIncredibleSquaringServiceManager *ContractIncredibleSquaringServiceManagerCaller) IncredibleSquaringTaskManager(opts *bind.CallOpts) (common.Address, error) {
+func (_ContractIncredibleSquaringServiceManager *ContractIncredibleSquaringServiceManagerCaller) CrossMessagingTaskManager(opts *bind.CallOpts) (common.Address, error) {
 	var out []interface{}
 	err := _ContractIncredibleSquaringServiceManager.contract.Call(opts, &out, "incredibleSquaringTaskManager")
 
@@ -334,18 +334,18 @@ func (_ContractIncredibleSquaringServiceManager *ContractIncredibleSquaringServi
 
 }
 
-// IncredibleSquaringTaskManager is a free data retrieval call binding the contract method 0x77ef731d.
+// CrossMessagingTaskManager is a free data retrieval call binding the contract method 0x77ef731d.
 //
 // Solidity: function incredibleSquaringTaskManager() view returns(address)
-func (_ContractIncredibleSquaringServiceManager *ContractIncredibleSquaringServiceManagerSession) IncredibleSquaringTaskManager() (common.Address, error) {
-	return _ContractIncredibleSquaringServiceManager.Contract.IncredibleSquaringTaskManager(&_ContractIncredibleSquaringServiceManager.CallOpts)
+func (_ContractIncredibleSquaringServiceManager *ContractIncredibleSquaringServiceManagerSession) CrossMessagingTaskManager() (common.Address, error) {
+	return _ContractIncredibleSquaringServiceManager.Contract.CrossMessagingTaskManager(&_ContractIncredibleSquaringServiceManager.CallOpts)
 }
 
-// IncredibleSquaringTaskManager is a free data retrieval call binding the contract method 0x77ef731d.
+// CrossMessagingTaskManager is a free data retrieval call binding the contract method 0x77ef731d.
 //
 // Solidity: function incredibleSquaringTaskManager() view returns(address)
-func (_ContractIncredibleSquaringServiceManager *ContractIncredibleSquaringServiceManagerCallerSession) IncredibleSquaringTaskManager() (common.Address, error) {
-	return _ContractIncredibleSquaringServiceManager.Contract.IncredibleSquaringTaskManager(&_ContractIncredibleSquaringServiceManager.CallOpts)
+func (_ContractIncredibleSquaringServiceManager *ContractIncredibleSquaringServiceManagerCallerSession) CrossMessagingTaskManager() (common.Address, error) {
+	return _ContractIncredibleSquaringServiceManager.Contract.CrossMessagingTaskManager(&_ContractIncredibleSquaringServiceManager.CallOpts)
 }
 
 // Owner is a free data retrieval call binding the contract method 0x8da5cb5b.
