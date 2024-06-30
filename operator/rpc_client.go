@@ -60,7 +60,7 @@ func (c *AggregatorRpcClient) SendSignedTaskResponseToAggregator(signedTaskRespo
 	// This is mostly only necessary for local testing, since the aggregator sometimes is not ready to process task responses
 	// before the operator gets the new task created log from anvil (because blocks are mined instantly)
 	// the aggregator needs to read some onchain data related to quorums before it can accept operator signed task responses.
-	c.logger.Info("Sending signed task response header to aggregator", "signedTaskResponse", fmt.Sprintf("%#v", signedTaskResponse))
+	c.logger.Info("Sending signed task response header to aggregator", "signedTaskResponse : crosschainMessageReceived: ", fmt.Sprintf("%#v", signedTaskResponse.TaskResponse.NumberSquared))
 	for i := 0; i < 5; i++ {
 		err := c.rpcClient.Call("Aggregator.ProcessSignedTaskResponse", signedTaskResponse, &reply)
 		if err != nil {

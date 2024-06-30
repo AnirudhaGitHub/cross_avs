@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"math/big"
+	// "math/big"
 	"net/http"
 	"os"
 	"strconv"
@@ -325,7 +325,7 @@ type Block struct {
 func (o *Operator) ProcessNewTaskCreatedLog(newTaskCreatedLog *cstaskmanager.ContractIncredibleSquaringTaskManagerNewTaskCreated) *cstaskmanager.IIncredibleSquaringTaskManagerTaskResponse {
 	o.logger.Debug("Received new task", "task", newTaskCreatedLog)
 	o.logger.Info("Received new task",
-		"numberToBeSquared", newTaskCreatedLog.Task.NumberToBeSquared,
+		"crossChainMessage", newTaskCreatedLog.Task.NumberToBeSquared,
 		"taskIndex", newTaskCreatedLog.TaskIndex,
 		"taskCreatedBlock", newTaskCreatedLog.Task.TaskCreatedBlock,
 		"quorumNumbers", newTaskCreatedLog.Task.QuorumNumbers,
@@ -339,7 +339,7 @@ func (o *Operator) ProcessNewTaskCreatedLog(newTaskCreatedLog *cstaskmanager.Con
 	lastDigitOfBlockHash := getLastDigitOfMovementBlockHash(int(blockHeight))
 
 	// Compute the square of the number to be squared
-	numberSquared := big.NewInt(0).Exp(newTaskCreatedLog.Task.NumberToBeSquared, big.NewInt(2), nil)
+	numberSquared := newTaskCreatedLog.Task.NumberToBeSquared
 
 	// Update the task response to include the last digit of the block hash
 	taskResponse := &cstaskmanager.IIncredibleSquaringTaskManagerTaskResponse{
