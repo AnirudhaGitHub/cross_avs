@@ -1,6 +1,9 @@
 # Cross AVS
 
 
+![image](https://github.com/AnirudhaGitHub/cross_avs/assets/167628180/65d59d99-f99c-4e80-b69f-3181a9d17fc1)
+
+
 ## Dependencies
 
 You will need [foundry](https://book.getfoundry.sh/getting-started/installation) and [zap-pretty](https://github.com/maoueh/zap-pretty) and docker to run the examples below.
