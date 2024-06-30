@@ -1,6 +1,6 @@
 # Cross AVS
 
-The Cross-Chain Messaging AVS (Atomic Verifiable Service) is a protocol designed to facilitate secure and verifiable messaging across multiple blockchain networks. Currently crossAVS will allow you to transfer message from Movement blockchain to other EVM network like arbitrum. It ensures reliable communication between different blockchain environments, enabling actions such as asset transfers, data sharing, and decentralized application interactions.
+The Cross-Chain Messaging AVS is a protocol designed to facilitate secure and verifiable messaging across multiple blockchain networks. Currently crossAVS will allow you to transfer message from Movement blockchain to other EVM network like arbitrum. It ensures reliable communication between different blockchain environments, enabling actions such as asset transfers, data sharing, and decentralized application interactions.
 
 ![image](https://github.com/AnirudhaGitHub/cross_avs/assets/167628180/65d59d99-f99c-4e80-b69f-3181a9d17fc1)
 
