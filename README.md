@@ -5,12 +5,36 @@ The Cross-Chain Messaging AVS is a protocol designed to facilitate secure and ve
 ![image](https://github.com/AnirudhaGitHub/cross_avs/assets/167628180/65d59d99-f99c-4e80-b69f-3181a9d17fc1)
 
 ## Integrations:
-The project integrates Movement labs and eigan layer.
+The project integrates Movement labs and eigen layer.
+
+
+![movement](https://github.com/AnirudhaGitHub/cross_avs/assets/167628180/583460c1-f1db-4344-8621-81df7bf109ee)
+
+![image](https://github.com/AnirudhaGitHub/cross_avs/assets/167628180/fcfc0678-afbf-428a-b1a6-e2a400f51962)
+
 
 ## Goal Of the project:
 The goal of the project is to create sdk or AVS contract that will allow other dapps to build multichains Dapps. Currently the project tries to connect Movement blockchain with EVM chain like arbitrum. 
 
-- note that  In this project samve anvil chain and same avs contract is being used instead of using two anvil chains to demonstrate multichain messaging, and instead of using bytes message datatype, uint datatype is used for simple demonstration .
+- note that  In this project samve anvil chain and same avs contract is being used instead of using two anvil chains to demonstrate multichain messaging, and instead of using bytes message datatype, uint datatype is used for simple demonstration.
+
+## UseCases of cross chain message using Cross AVS:
+
+Using Cross AVS, dapp integrator can build below dapps:
+1. Cross-chain Decentralized Exchanges (cross chain swap / bridge)
+2. Cross-chain lending and borrowing 
+3. Cross-chain liquidation protocols 
+4. Cross-chain NFT marketplaces 
+5. Cross-chain DAO
+
+## DEMO
+
+https://github.com/AnirudhaGitHub/cross_avs/assets/167628180/3a62038e-f09d-4ea5-a55e-a2afa46f7329
+
+
+
+## Deployed link
+https://cross-avs.vercel.app/
 
 ## Architecture of the AVS
 - **`AVS contract:`**:
