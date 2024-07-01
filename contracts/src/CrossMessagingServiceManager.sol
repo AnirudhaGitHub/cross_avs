@@ -9,7 +9,7 @@ import "@eigenlayer-middleware/src/ServiceManagerBase.sol";
  * @title Primary entrypoint for procuring services from IncredibleSquaring.
  * @author Layr Labs, Inc.
  */
-contract ICrossMessagingServiceManager is ServiceManagerBase {
+contract CrossMessagingServiceManager is ServiceManagerBase {
     using BytesLib for bytes;
 
     ICrossMessagingTaskManager
