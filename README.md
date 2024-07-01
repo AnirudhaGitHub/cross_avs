@@ -4,6 +4,19 @@ The Cross-Chain Messaging AVS is a protocol designed to facilitate secure and ve
 
 ![image](https://github.com/AnirudhaGitHub/cross_avs/assets/167628180/65d59d99-f99c-4e80-b69f-3181a9d17fc1)
 
+## Architecture of the AVS
+- **`AVS contract:`**:
+Source Chain  and destination chain will have same EVS Contract deployed on both chains. In our case destination and source chain can be movement and arbitrum. In this Contract user / dapp contract will initiate the task on source chain's avs contract. Operator will listen to this task event and operator will send the message and sign it and send it to destination chain via aggregator.
+
+- **`Operators:`**
+Sends the message sent by chain A crossmessagecontract to chain B, sign it, and send it to the aggregator.
+
+- **`Aggregator:`**
+aggregates BLS signatures from operators and posts the aggregated response to the task manager
+For this simple demo, the aggregator is not an operator, and thus does not need to register with eigenlayer or the AVS contract. It's IP address is simply hardcoded into the operators' config.
+
+- **`Task Generator:`**
+in a real world scenario, this could be a separate entity, but for this simple demo, the aggregator also acts as the task generator
 
 ## Dependencies
 
