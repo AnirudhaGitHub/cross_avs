@@ -5,7 +5,7 @@ The Cross-Chain Messaging AVS is a protocol designed to facilitate secure and ve
 ![image](https://github.com/AnirudhaGitHub/cross_avs/assets/167628180/65d59d99-f99c-4e80-b69f-3181a9d17fc1)
 
 ## Integrations:
-The project intyegrates Movement labs and eigan layer.
+The project integrates Movement labs and eigan layer.
 
 ## Architecture of the AVS
 - **`AVS contract:`**:
