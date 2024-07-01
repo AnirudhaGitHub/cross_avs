@@ -7,6 +7,11 @@ The Cross-Chain Messaging AVS is a protocol designed to facilitate secure and ve
 ## Integrations:
 The project integrates Movement labs and eigan layer.
 
+## Goal Of the project:
+The goal of the project is to create sdk or AVS contract that will allow other dapps to build multichains Dapps. Currently the project tries to connect Movement blockchain with EVM chain like arbitrum. 
+
+- note that  In this project samve anvil chain and same avs contract is being used instead of using two anvil chains to demonstrate multichain messaging, and instewd od using bytes message datatype, uint datatype is use for simple demonstration .
+
 ## Architecture of the AVS
 - **`AVS contract:`**:
 Source Chain  and destination chain will have same EVS Contract deployed on both chains. In our case destination and source chain can be movement chain and arbitrum. In this Contract user / dapp contract will initiate the task on source chain's avs contract. Operator will listen to this task event and operator will send the message and sign it and send it to destination chain via aggregator.
